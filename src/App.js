@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import Drop from './dropdown';
+import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
+import fetchData from './fetchData';
+
+fetchData();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid>
+  <Row className='fullScreen'>
+    <Col className='fullScreen'><Drop/></Col>
+  </Row>
+</Container>
+   
+   
   );
 }
 
